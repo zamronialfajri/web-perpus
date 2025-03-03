@@ -1,0 +1,5 @@
+/writable/*
+/.env
+/system/*
+/tests/*
+/public/uploads/*
