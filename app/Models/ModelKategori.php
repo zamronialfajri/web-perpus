@@ -9,7 +9,7 @@ class ModelKategori extends Model
     public function AllData()
     {
         return $this->db->table('tbl_kategori')
-            ->orderBy('id_kategori', 'DESC')
+            ->orderBy('id_kategori', 'ASC')
             ->get()->getResultArray();
     }
 

@@ -9,7 +9,7 @@ class ModelPenerbit extends Model
     public function AllData()
     {
         return $this->db->table('tbl_penerbit')
-            ->orderBy('id_penerbit', 'DESC')
+            ->orderBy('id_penerbit', 'ASC')
             ->get()->getResultArray();
     }
 

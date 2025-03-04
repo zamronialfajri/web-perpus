@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <div class="card card-outline card-primary">
+    <div class="card card-outline card-secondary">
         <div class="card-header">
             <h3 class="card-title">Data <?= $judul ?></h3>
                 <div class="card-tools">
@@ -21,8 +21,8 @@
         }
       ?>
      
-        <table class="table table-bordered">
-            <thead>
+        <table class="table table-bordered table-striped">
+            <thead class="table-secondary">
                 <tr class="text-center">
                     <th width="50px">NO</th>
                     <th>Nama Penerbit</th>

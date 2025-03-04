@@ -9,7 +9,7 @@ class ModelPenulis extends Model
     public function AllData()
     {
         return $this->db->table('tbl_penulis')
-            ->orderBy('id_penulis', 'DESC')
+            ->orderBy('id_penulis', 'ASC')
             ->get()->getResultArray();
     }
 

@@ -9,7 +9,7 @@ class ModelRak extends Model
     public function AllData()
     {
         return $this->db->table('tbl_rak')
-            ->orderBy('id_rak', 'DESC')
+            ->orderBy('id_rak', 'ASC')
             ->get()->getResultArray();
     }
 
