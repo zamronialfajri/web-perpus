@@ -17,7 +17,7 @@ class Kategori extends BaseController
     public function index()
     {
         $data = [
-            'menu' => 'masterdata',
+            'menu' => 'masterbuku',
             'submenu' => 'kategori',
             'judul' => 'Kategori',
             'page'  => 'v_kategori',
@@ -28,7 +28,9 @@ class Kategori extends BaseController
 
     public function Add()
     {
-        $data = ['nama_kategori'=>$this->request->getPost('nama_kategori')];
+        $data = [
+            'nama_kategori'=>$this->request->getPost('nama_kategori')
+        ];
         $this->ModelKategori->Add($data);
         session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan');
         return redirect()->to(base_url('Kategori'));

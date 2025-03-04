@@ -95,36 +95,71 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
 
-          <li class="nav-item <?= $menu == 'masterdata' ? 'menu-open' : '' ?>">
-            <a href="#" class="nav-link <?= $menu == 'masterdata' ? 'active' : '' ?>">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Master Data<i class="right fas fa-angle-left"></i></p>
+          <li class="nav-item <?= $menu == 'masterbuku' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'masterbuku' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-book"></i>
+              <p>Master Buku<i class="right fas fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview">
+
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Buku</p>
                 </a>
               </li>
+
               <li class="nav-item">
                 <a href="<?= base_url('Kategori') ?>" class="nav-link <?= $submenu == 'kategori' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kategori</p>
                 </a>
               </li>
+
               <li class="nav-item">
                 <a href="<?= base_url('Rak') ?>" class="nav-link <?= $submenu == 'rak' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rak</p>
                 </a>
               </li>
+
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('Penerbit') ?>" class="nav-link <?= $submenu == 'penerbit' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Penerbit</p>
                 </a>
               </li>
+
+              <li class="nav-item">
+                <a href="<?= base_url('Penulis') ?>" class="nav-link <?= $submenu == 'penulis' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Penulis</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item <?= $menu == 'masteranggota' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'masteranggota' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-users"></i>
+              <p>Master Anggota<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Anggota</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<?= base_url('Kelas') ?>" class="nav-link <?= $submenu == 'kelas' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kelas</p>
+                </a>
+              </li>
+
             </ul>
           </li>
 
